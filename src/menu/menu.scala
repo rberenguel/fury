@@ -1,5 +1,5 @@
 /*
-  Fury, version 0.1.0. Copyright 2018 Jon Pretty, Propensive Ltd.
+  Fury, version 0.1.2. Copyright 2018 Jon Pretty, Propensive Ltd.
 
   The primary distribution site is: https://propensive.com/
 
@@ -102,7 +102,7 @@ object FuryMenu {
       ),
       Action('undo, msg"undo the previous modification", BuildCli.undo),
       Menu('layer, msg"view and edit the layer", LayerCli.context, 'describe)(
-        Action('projects, msg"show all available projectts", LayerCli.projects),
+        Action('projects, msg"show all available projects", LayerCli.projects),
         Action('publish, msg"publish the layer to git", LayerCli.publish),
       ),
     ) ::: aliases): _*)
